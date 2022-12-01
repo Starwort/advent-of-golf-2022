@@ -6,4 +6,6 @@ solution = lambda i: (sum(v:=sorted(sum(map(int,y.split()))for y in i.split('\n\
 solution = lambda i: (sum(v:=sorted(eval(i.replace('\n','+').replace('++',",")))[-3:]),v[2])[::-1]
 # score:          73 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 solution = lambda i: ((v:=sorted(eval(i.replace('\n','+').replace('++',",")))[-3:])[2],sum(v))
+# new (70)
+solution = lambda s: ((v:=sorted(eval(s.replace(*'\n+').replace('++',",")))[-3:])[2],sum(v))
 # fmt: on
