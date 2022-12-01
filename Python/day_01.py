@@ -4,8 +4,7 @@ solution = lambda i: ((v:=sorted(sum(map(int,y.split()))for y in i.split("\n\n")
 # the following solution was created before solutions were requred to return an in-order tuple
 solution = lambda i: (sum(v:=sorted(sum(map(int,y.split()))for y in i.split('\n\n'))[-3:]),v[2])[::-1]
 solution = lambda i: (sum(v:=sorted(eval(i.replace('\n','+').replace('++',",")))[-3:]),v[2])[::-1]
-# score:          73 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 solution = lambda i: ((v:=sorted(eval(i.replace('\n','+').replace('++',",")))[-3:])[2],sum(v))
-# new (70)
+# score:          71 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 solution = lambda s: ((v:=sorted(eval(s.replace(*'\n+').replace('++',",")))[-3:])[2],sum(v))
 # fmt: on
