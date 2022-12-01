@@ -2,8 +2,8 @@
 
 Golfed Python code for Advent of Code 2022
 
-This repo aims to serve as a central Python Discord repository of golfed Advent of Code 2022 solutions.
+This repo aims to serve as a central repository of golfed Advent of Code 2022 solutions.
 
 ## Solution format
 
-Solutions should be expressed as a lambda taking a single parameter `i` (the input for the day) and return a tuple or list (1, 2) of puzzle solutions. See `day01.py` for an example.
+Solution format will vary by language. See `[language name]/README.md` for information for your language.
