@@ -1,0 +1,1 @@
+Run as `./day_x.sh <day>.in`.
