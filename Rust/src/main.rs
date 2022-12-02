@@ -24,7 +24,11 @@ fn main() {
                 let (input, real_answer) = load_inputs_and_answers(&arg);
                 (real_answer, day_01::solution(input).into_answers())
             },
-            "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12"
+            "2" => {
+                let (input, real_answer) = load_inputs_and_answers(&arg);
+                (real_answer, day_02::solution(input).into_answers())
+            },
+            "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12"
             | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22"
             | "23" | "24" | "25" => {
                 println!("Day {arg} has not yet been solved.");
