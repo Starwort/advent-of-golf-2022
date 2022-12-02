@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 mod solutions;
 use into_answers::IntoAnswers;
 #[allow(clippy::wildcard_imports)]
