@@ -29,3 +29,11 @@ Explanation
         D.liC35-ëC17+}      if statement (see part 1)
                       }O    close mapping then sum
 ```
+
+## Combined - 39 chars
+
+```
+|εDg;ô`Ãн}¸s3ôε`ÃÃн}ªεεD.liC35-ëC17+}}O
+```
+
+Refactored parts 1 and 2 into a oneliner
