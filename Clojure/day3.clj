@@ -1,0 +1,2 @@
+;; 261 characters
+(use '[clojure.set])(defn a[s l](apply +(map #((fn[l](let[x(int l)](if(> x 95)(- x 96)(- x 38))))(first(vec(apply intersection(map set(s %))))))l)))(print(let[x(clojure.string/split-lines(slurp *in*))][(a #(split-at(/(count %)2)%)x)(a #(do %)(partition 3 x))]))

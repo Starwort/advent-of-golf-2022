@@ -1,0 +1,1 @@
+Run as `clojure -M day_N.clj < N.in`.
