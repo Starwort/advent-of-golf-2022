@@ -1,3 +1,3 @@
 # Rules for Python submissions
 
-Solutions should be expressed as a lambda taking a single parameter `i` (the input for the day) and return a tuple or list (1, 2) of puzzle solutions. See `day_01.py` for examples.
+Solutions should be single-file programs taking input, without trailing newlines, from stdin (`open(0)`) and giving two answers separated by whitespace (`' '` or `'\n'`) on stdout (`print`). Solutions should not provide unrelated output (e.g. logging, spurious blank lines).
