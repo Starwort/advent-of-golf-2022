@@ -5,6 +5,7 @@ solution = lambda i: (sum([" XYZ".index(r)+3*((ord(r)-ord(o)+2)%3)for o,r in [j.
 solution = lambda i: ((k:=[j.split()for j in i.split('\n')],sum([" XYZ".index(r)+3*((ord(r)-ord(o)+2)%3)for o,r in k]))[1],sum([3*("XYZ".index(r))+((ord(o)+ord(r)+2)%3)+1 for o,r in k]))
 solution = lambda i: ((k:=[j.split()for j in i.split('\n')],sum([ord(r)%4+1+3*((ord(r)-ord(o)+2)%3)for o,r in k]))[1],sum([3*(ord(r)%4)+(ord(o)+ord(r)+2)%3+1 for o,r in k]))
 solution = lambda i: ((q:=ord,k:=[j.split()for j in i.split('\n')],sum([q(r)%4+1+3*((q(r)-q(o)+2)%3)for o,r in k]))[2],sum([3*(q(r)%4)+(q(o)+q(r)+2)%3+1 for o,r in k]))
-# score:         131 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 solution = lambda i: ((q:=ord,k:=i.split('\n'),sum([q(r)%4+1+3*((q(r)-q(o)+2)%3)for o,_,r in k]))[2],sum([3*(q(r)%4)+(q(o)+q(r)+2)%3+1 for o,_,r in k]))
+# score:         109 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+solution = lambda i: [sum(s)for s in zip(*((3*((r-o+2)%3)+r-87,3*r+(r+o+2)%3-263)for l in i.split('\n')for o,_,r in[map(ord,l)]))]
 # fmt: on
