@@ -32,3 +32,10 @@ https://tio.run/#osabie
 ### Day 4 - 31 chars
 
     |ε',¡ε'-¡`Ÿ}éRDθgs`ÃgD0ÊŠQ)}øOR
+
+
+### Day 5 - oof!
+
+### Day 6 - 31 chars
+
+    Dü4.ΔÙg4Q}k4+sDü14.ΔÙg14Q}k14+)
