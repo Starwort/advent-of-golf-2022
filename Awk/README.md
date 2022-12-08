@@ -1,4 +1,5 @@
-Run this as `./runner.sh <day_number>`.
+# Rules for Awk submissions
 
-Character count includes reading from stdin and printing to stdout.
-The only output should be the two solutions.
+Solutions should be single-file programs taking input, without trailing newlines, from stdin and giving two answers separated by whitespace (`' '` or `'\n'`) on stdout. Solutions should not provide unrelated output (e.g. logging, spurious blank lines).
+
+Run this as `./runner.sh <day_number>`.

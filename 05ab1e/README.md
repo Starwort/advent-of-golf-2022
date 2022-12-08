@@ -2,9 +2,9 @@
 
 See https://github.com/Adriandmen/05AB1E
 
-Entries should take input via standard in and return a single pair of (part1, part2)
+Entries should take input via standard in (with no trailing newline) and return a single pair of (part1, part2)
 
-entries can be run as 
+Entries can be run as:
 
     ./osabie <entry>.abe < input.txt
 
@@ -12,12 +12,15 @@ or use TIO
 
 https://tio.run/#osabie
 
+## Scoring:
+
+The solution will be measured in characters, excluding any trailing newline.
 
 ## Solution summaries
 
 ### Day 1 - 14 chars
 
-    * Required a patch to 05abie https://github.com/Adriandmen/05AB1E/pull/200
+    * Required a patch to 05ab1e https://github.com/Adriandmen/05AB1E/pull/200
 
     .|õ¡O{Dθs3.£O)
 
