@@ -26,7 +26,7 @@ for day in sys.argv[1:]:
         real_answer = (solution1.read(), solution2.read())
     with patch("builtins.open", mock_open(input)), patch(
         "sys.stdout", new_callable=StringIO
-    ) as fake_out:
+    ) as fake_out, patch("sys.stderr", new_callable=StringIO) as fake_err:
         import_module(f"day_{day:02d}")
         answer = fake_out.getvalue().split()
     if (answer[0], answer[1]) == real_answer:
@@ -36,3 +36,5 @@ for day in sys.argv[1:]:
             f"Solution gave wrong answer {answer[0]}, {answer[1]}! Correct answer:"
             f" {real_answer}"
         )
+        print("Solution output:", fake_out.getvalue())
+        print("Solution errors:", fake_err.getvalue())
