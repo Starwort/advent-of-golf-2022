@@ -2,10 +2,15 @@
 
 # Set J_COMMAND here:
 J_COMMAND=
-J_COMMAND='/mnt/c/Users/Nate/j903/bin/jconsole.exe'
+
+if [ -z "$1" ]; then
+  echo "Usage: ./$0 <day number>"
+
+  exit 1
+fi
 
 if [ -z "$J_COMMAND" ]; then
-  echo "Error: \$J_COMMAND is not set. Please set \$J_COMMAND to the path to your local J interpreter to proceed."
+  echo "Error: \$J_COMMAND is not set. Please edit runner.sh to point \$J_COMMAND to your local J interpreter binary to proceed."
 
   exit 1
 fi
