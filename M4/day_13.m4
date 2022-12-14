@@ -7,7 +7,11 @@ dnl score 369
 define(d,defn(define))d(f,$1)d(a)d(S,s(s($@)))d(s,defn(shift))d(C,+c($1,(($2))))d(c,`ifelse($1,$2,`c(S($@))',$1,(),1,$2,(),0,a$1a$2,,`c(f$1,f$2,(s$1),(s$2),S($@))',a$1,,`c($1,($2),S($@))',a$2,,`c(($1),s($@))',`($1<$2)')')d(_,`ifelse($3,,`) eval((1$1)',`+($2)*c($3,$4)_(C($3,2)C($4,2)`$1'C($3,6)C($4,6),$2+1S(S($@)))')')eval(_(`)*(2',1,translit((include(i)),[
 ](),(,))))
 
-]]changequote)dnl
 dnl score 351
 define(d,defn(define))d(f,$1)d(a)d(S,s(s($@)))d(s,defn(shift))d(c,`ifelse($1,$2,`c(S($@))',$1,(),+1,$2,(),+0,a$1a$2,,`c(f$1,f$2,(s$1),(s$2),S($@))',a$1,,`c($1,($2),S($@))',a$2,,`c(($1),s($@))',+($1<$2))')d(_,`ifelse($3,,`) eval((1$1)',`c($3,$4)*($2)_(c($3,2)c($4,2)`$1'c($3,6)c($4,6),$2+1S(S($@)))')')eval(_(`)*(2',1,translit((include(i)),[
 ](),(,))))
+
+]]changequote)dnl
+dnl score 336
+define(d,defn(define))d(f,$1)d(a)d(s,defn(shift))d(c,`ifelse($1,$2,`c(',$1,(),`+1a(',$2,(),`+0a(',a$1a$2,,`c(f$1,f$2,(s$1),(s$2),',a$1,,`c($1,($2),',a$2,,`c(($1),$2,',`+($1<$2)a(')s(s($@)))')eval(translit(_(,1,include(i)),[
+],(,)d(_,`ifelse($3,,`) eval((1$1)*(2',`c($3,$4)*($2)_(c($3,2)c($4,2)$1,$2+1s(s(s(s($@)))))c($3,6)c($4,6)')'))))
