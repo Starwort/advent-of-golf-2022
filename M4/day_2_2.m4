@@ -6,6 +6,10 @@ dnl score (98) - prior to tighter I/O rules, requires trailing newline
 eval(translit(include(i),X Y
 Z,1(2)3define(d,`define($1,+$`1'*3-($2-$`1')%3)')d(A,4)d(B,3)d(C,5)))
 
+dnl score 108
+eval(translit(_(include(i)),define(_,`ifelse($1,,,`+index(..BXCXAXAYBYCYCZAZBZ,$1)/2_(shift($@))')')
+ ,`,'))
+
 ]]changequote)dnl
 dnl score 99
 eval(translit(include(i),X Y
