@@ -38,3 +38,4 @@ Here is a list of scores, separated by language and day and scored according to 
 | 11  |      - |       - |    - |    - |       - |    - |    - |     - |    - |    271 |    - |    - |    - |
 | 12  |      - |       - |    - |    - |       - |    - |    - |     - |    - |      - |    - |    - |    - |
 | 13  |      - |       - |    - |    - |       - |    - |    - |   336 |    - |      - |    - |    - |    - |
+| 14  |      - |       - |    - |    - |       - |    - |    - |   517 |    - |      - |    - |    - |    - |
