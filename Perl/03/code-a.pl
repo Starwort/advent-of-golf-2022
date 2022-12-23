@@ -1,0 +1,1 @@
+sub M{-38%ord(pop)%58}@B=/./g,$z+=M(grep$_~~[@B],splice@B,@B/2)for @A=<>;($a,$b,$c)=@A[$_*3..$_*3+2],$\+=M(grep$b=~$_&$c=~$_,$a=~/./g)for 0..$#A/3;print$z,$/
