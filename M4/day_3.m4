@@ -11,7 +11,11 @@ dnl score 327
 define(a,`+index(..bcd.fgh.jklmn.pqrst.vwx.z.BCD.FGH.JKLMN.PQRST.VWX.Z,substr($1,0,1))')define(e,`translit($1A,$2A-z,$2_)')define(o,`a(e(substr($1,0,eval(len($1)/2)),substr($1,eval(len($1)/2))))')define(u,`ifelse($1,,`) eval(',`o($1)o($2)o($3)u(shift(shift(shift($@))))a(e(e($1,$2),$3))')')eval(u(translit(include(i),`
 ',`,')))
 
-]]changequote)dnl
 dnl score 325
 define(a,`+index(..bcd.fgh.jklmn.pqrst.vwx.z.BCD.FGH.JKLMN.PQRST.VWX.Z,substr($1,0,1))')define(o,`a(e(substr($1,0,eval(len($1)/2)),substr($1,eval(len($1)/2))))')define(u,`ifelse($1,,`) eval(',`o($1)o($2)o($3)u(shift(shift(shift($@))))a(e(e($1,$2),$3))')')eval(u(translit(include(i),define(e,`translit($1A,$2A-z,$2_)')
+,`,')))
+
+]]changequote)dnl
+dnl score 316
+define(E,defn(define))E(o,a(e(y($1,0),y($1))))E(a,`+index(..bcd.fgh.jklmn.pqrst.vwx.z.BCD.FGH.JKLMN.PQRST.VWX.Z,substr($1,0,1))')E(y,`substr($*,eval(len($1)/2))')E(u,`ifelse($1,,`) eval(',`o($1)o($2)o($3)u(shift(shift(shift($@))))a(e(e($1,$2),$3))')')eval(u(translit(include(i),E(e,`translit($1A,$2A-z,$2_)')
 ,`,')))
