@@ -7,7 +7,15 @@ dnl score 221
 define(o,`$1 eval($1+$2+$3)')define(m,`ifelse(eval($1>$2+0),1,``$1,$2,$3'',``$2,'m($1,$3,$4)')')define(_,`ifelse($2,,`o($1',$3,,`_(m($2,$1)',`_(`$1',eval($3+$2)'),shift(shift(shift($@))))')_(,translit(include(i),`
 ',`,'))
 
-]]changequote)dnl
 dnl score 219
 define(m,`ifelse(eval($1>$2+0),1,``$1,$2,$3'',``$2,'m($1,$3,$4)')')define(_,`ifelse($2,,`o($1',$3,,`_(m($2,$1)',`_(`$1',eval($3+$2)'),shift(shift(shift($@))))')_(,translit(include(i),define(o,`$1 eval($1+$2+$3)')
+,`,'))
+
+dnl score 212
+define(m,`ifelse(eval($1>$2+0),1,``$*'',``$2,'m($1,$3,$4)')')define(_,`ifelse($2,,`o(eval,$1',$3,,`_(m($2,$1)',`_(`$1',$3+$2'),shift(shift(shift($@))))')_(,translit(include(i),define(o,$1($2) $1($2+$3+$4))
+,`,'))
+
+]]changequote)dnl
+dnl score 202
+define(m,`ifelse(eval($1>$2+0),1,``$*'',``$2,'m($1,$3,$4)')')define(_,`ifelse($2,,`o(eval,$1',$3,,`_(m($2,$1)',`_(`$1',$2+')shift(shift($@)))')_(,translit(include(i),define(o,$1($2) $1($2+$3+$4))
 ,`,'))
