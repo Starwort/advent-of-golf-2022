@@ -6,9 +6,12 @@ output two results separated by just one whitespace (either ' ' or
 '\n'); trailing newlines are ignored, and no other output is accepted
 (leading or extra whitespace, debugging, etc); exit status should be
 0.  Optionally, golfing for just one part of the day can be done in
-day_$number_$part.m4.
+day_$number_$part.m4.  Day 10 part 2 output is also recognized in raw
+form of 6 lines of 40 characters, with `.` for an off bit, and `@` or
+`#` for an on bit.
 
-Scoring counts all bytes in the submission (except a final newline);
+Scoring counts all bytes in the submission (except a final newline if
+adding 'dnl' to the end of the script does not break the runner);
 newlines mid-submission are counted as if they are essential, as it is
 not easy to determine otherwise.  Commenting out earlier submissions
 is probably easiest with changequote([[, ]])ifelse([[
