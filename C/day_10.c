@@ -12,10 +12,18 @@ int a,c,d,e=1;char*p,*q,b[253];int main(void){for(q=6+(p=b);~(*++p=
 getchar());*q=10)e+=*p<40?a+=-~d*e*!(d%40-19),q+=!(d%40),c=e-d++%40,
 *q++="#."[c*c>1],atoi(1+(p=b)):0;printf("%d%s",a,b+6);}
 
-#endif
 /* score 219 */
 #include<stdio.h>
 #include<stdlib.h>
 int a,c,d,e=1;char*p,*q,b[253];int main(void){for(q=6+(p=b);~
 (*++p=getchar());*b=*q=10)e+=*p<40?q+=!(c=d%40),a+=++d*e*!(c-
 19),c-=e,*q++="#."[c*c>1],atoi(p=b):0;printf("%d%s",a,b+6);}
+
+#endif
+/* score 286, with its own OCR */
+#include<stdio.h>
+#include<stdlib.h>
+int a,c,d,e=1,x[8];char*p,b[5];int main(void){for(p=b;~(*p=getchar());)
+e+=*p<40?c=d%40,a+=-~d*e*!(c-19),x[c/5]+=((c-e)*(c-e)<2)<<(d++%5*2),
+atoi(p=b):!p++;for(c=!printf("%d ",a);c<8;)putchar(
+"X L  J  G K IAHS  E   F       Y   RZOUB C P"[x[c++]%44]);}
