@@ -11,7 +11,11 @@ dnl score 156
 eval(define(_,`ifelse($1,,`) eval(',`+($1>=$3&$2<=$4|$3>=$1&$4<=$2)_(shift(shift(shift(shift($@)))))+($3<=$2&$4>=$1)')')_(translit((include(i)),-
 (),`,,')))
 
-]]changequote)dnl
 dnl score 152
 eval(translit(_(include(i)),-
 ,`,,'define(_,`ifelse($1,,`) eval(',`+($1>=$3&$2<=$4|$3>=$1&$4<=$2)_(shift(shift(shift(shift($@)))))+($3<=$2&$4>=$1)')')))
+
+]]changequote)dnl
+dnl score 151
+eval(translit(_(include(i)),-
+,`,,'define(_,`ifelse($1,,`) eval(',`+($1>=$3&$2<=$4|$3>=$1&$4<=$2)_(shift(shift(shift(shift($@)))))+!($3>$2|$4<$1)')')))
